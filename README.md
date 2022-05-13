@@ -10,5 +10,4 @@
 - 👨‍💻 [mojaeya](https://github.com/mojaeya)
 - 🧑‍💻 [kyle-shk](https://github.com/kyle-shk)
 - 👩‍💻 [wonder-H](https://github.com/wonder-H)
-- 👩‍💻 [doradora523](https://github.com/doradora523)
 - 🧑‍💻 [ijs1103](https://github.com/ijs1103)
