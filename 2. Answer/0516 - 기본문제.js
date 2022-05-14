@@ -24,19 +24,46 @@ let str = "COMPUTERPROGRAMMING";
 console.log(solution(str, "R"));
 
 // 🐯 3. 대문자
-function solution(s) {
-  let answer = 0;
-  for (let x of s) {
-    //let num=x.charCodeAt();
-    //if(num>=65 && num<=90) answer++;
-    if (x === x.toUpperCase()) answer++;
+// (1)
+function solution(s){         
+  let answer=0;
+  for(let x of s){
+      //let num=x.charCodeAt();
+      //if(num>=65 && num<=90) answer++;
+      if(x===x.toUpperCase()) answer++; 
   }
-
   return answer;
 }
-
-let str = "JavaScriptAlgorithmHorangStudy";
+let str="JavaScriptAlgorithmHorangStudy";
 console.log(solution(str));
+
+// (2)
+function solution(s){         
+  let answer="";
+  for(let x of s){
+      let num=x.charCodeAt();
+      if(num>=97 && num<=122) answer+=String.fromCharCode(num-32);
+      else answer+=x;
+
+      //if(x===x.toLowerCase()) answer+=x.toUpperCase();
+      //else answer+=x;
+  }
+  return answer;
+}
+let str="JavaScriptAlgorithmHorangStudy";
+console.log(solution(str));
+
+// (3)
+function solution(s){  
+  let answer="";
+  for(let x of s){
+      if(x===x.toUpperCase()) answer+=x.toLowerCase();
+      else answer+=x.toUpperCase();
+  }
+  return answer;
+}
+let str="JavaScriptAlgorithmHorangStudy"
+console.log(solution(str);
 
 // 🐯 4. 가장 긴 문자열
 function solution(s) {
@@ -78,15 +105,13 @@ function solution(s) {
 console.log(solution("ksekkset"));
 
 // 🐯 7. 중복단어제거
-function solution(s) {
+function solution(s){  
   let answer;
-  //console.log(s.indexOf("student"));
-  answer = s.filter((v, i) => {
-    //console.log(v, i);
-    if (s.indexOf(v) === i) return v;
+  //console.log(s.indexOf("time"));
+  answer=s.filter(function(v, i){
+      return s.indexOf(v)===i;
   });
-
   return answer;
 }
-let str = ["good", "time", "good", "time", "student"];
+let str=["html", "css", "html", "css", "javascript"];
 console.log(solution(str));
