@@ -1,4 +1,4 @@
-let str = "JavaScriptAlgorithmRocketStudy";
+let str = "JavaScriptAlgorithmHorangStudy";
 console.log(solution(str));
 
 // CODE 1
