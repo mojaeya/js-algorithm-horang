@@ -1,4 +1,4 @@
-// 🐯 1.
+// 🐯 1. 큰 수 출력하기
 function solution(arr) {
   let answer = [];
   answer.push(arr[0]);
@@ -11,7 +11,7 @@ function solution(arr) {
 let arr = [7, 3, 9, 5, 6, 12];
 console.log(solution(arr));
 
-// 🐯 2.
+// 🐯 2. 보이는 학생
 function solution(arr) {
   let answer = 1,
     max = arr[0];
@@ -27,7 +27,7 @@ function solution(arr) {
 let arr = [130, 135, 148, 140, 145, 150, 150, 153];
 console.log(solution(arr));
 
-// 🐯 3.
+// 🐯 3. 가위 바위 보
 function solution(a, b) {
   let answer = "";
   for (let i = 0; i < a.length; i++) {
@@ -45,7 +45,7 @@ let a = [2, 3, 3, 1, 3];
 let b = [1, 1, 2, 2, 3];
 console.log(solution(a, b));
 
-// 🐯 4.
+// 🐯 4. 점수계산
 function solution(arr) {
   let answer = 0,
     cnt = 0;
@@ -62,7 +62,7 @@ function solution(arr) {
 let arr = [1, 0, 1, 1, 1, 0, 0, 1, 1, 0];
 console.log(solution(arr));
 
-// 🐯 5.
+// 🐯 5. 등수구하기
 function solution(arr) {
   let n = arr.length;
   let answer = Array.from({ length: n }, () => 1);
@@ -77,7 +77,7 @@ function solution(arr) {
 let arr = [87, 89, 92, 100, 76];
 console.log(solution(arr));
 
-// 🐯 6.
+// 🐯 6. 격자판 최대합
 function solution(arr) {
   let answer = Number.MIN_SAFE_INTEGER;
   let n = arr.length;
@@ -108,7 +108,7 @@ let arr = [
 ];
 console.log(solution(arr));
 
-// 🐯 7.
+// 🐯 7. 봉우리
 function solution(arr) {
   let answer = 0;
   let n = arr.length;
