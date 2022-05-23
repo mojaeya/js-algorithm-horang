@@ -9,5 +9,4 @@
 ## 🔥 Team              
 - 👨‍💻 [mojaeya](https://github.com/mojaeya)
 - 🧑‍💻 [kyle-shk](https://github.com/kyle-shk)
-- 👩‍💻 [wonder-H](https://github.com/wonder-H)
 - 🧑‍💻 [ijs1103](https://github.com/ijs1103)
