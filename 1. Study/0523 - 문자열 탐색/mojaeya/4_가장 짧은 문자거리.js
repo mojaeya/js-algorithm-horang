@@ -14,16 +14,16 @@ function solution(s, t) {
     }
   }
 
-  //   console.log("answer:", answer);
+  // console.log("answer:", answer);
 
   for (let i = s.length - 1; i >= 0; i--) {
     if (s[i] === t) {
       count = 0;
     } else {
       count++;
-      //   console.log("answer[i]:", answer[i], "count:", count);
+      // console.log("answer[i]:", answer[i], "count:", count);
       answer[i] = Math.min(answer[i], count);
     }
   }
-  console.log(answer.join(""));
+  return answer.join("");
 }
