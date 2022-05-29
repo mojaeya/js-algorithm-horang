@@ -7,5 +7,5 @@ for i in range(a-2):
             set_li.add(li[i]+li[j]+li[k])
 set_li=list(set_li)
 set_li.sort(reverse=True)
-print(set_li)
+# print(set_li)
 print(set_li[b-1])
