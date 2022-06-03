@@ -8,12 +8,12 @@ function solution(N, K, sale) {
   let curSum = 0;
 
   for (let i = 0; i < K; i++) {
-    curSum += arr[i];
+    curSum += sale[i];
     answer = curSum;
   }
 
   for (let j = K; j < N; j++) {
-    curSum += arr[j] - arr[j - K];
+    curSum += sale[j] - sale[j - K];
     answer = Math.max(answer, curSum);
   }
 
