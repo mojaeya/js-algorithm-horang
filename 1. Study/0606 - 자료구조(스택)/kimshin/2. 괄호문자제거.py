@@ -4,11 +4,8 @@ def sol(s):
 
     for x in s:
         if x == ')':
-            while True:
-                if stack.pop()!='(':
-                    stack.pop() 
-                stack.pop() 
-                break
+            while stack.pop() !='(':
+                continue
         else:
             stack.append(x)
     answer = ''.join(stack)
