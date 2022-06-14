@@ -9,7 +9,7 @@ function insertionSort(array) {
       array[j + 1] = array[j]; // 한칸씩 뒤로 밀어냄
     }
     array[j + 1] = temp; // 마지막 빈칸에 temp 대입
-    // console.log(array);
+    console.log(array);
   }
   return array;
 }
