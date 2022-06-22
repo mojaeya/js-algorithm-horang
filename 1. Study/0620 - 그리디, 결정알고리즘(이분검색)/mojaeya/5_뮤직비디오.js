@@ -11,7 +11,7 @@ function solution(M, arr) {
   while (lt <= rt) {
     let mid = Math.floor((lt + rt) / 2); // 이분검색과 동일
     let dvd = 1; // 1개 DVD로 녹화 시작
-    let sum = 0; // 1개 DVD에 저장되는 음악 크기
+    let sum = 0; // 1개 DVD에 저장되는 음악 크기ㄴ
     // console.log(`lt = ${lt}, mid = ${mid}, rt = ${rt}`);
 
     for (let x of arr) {
