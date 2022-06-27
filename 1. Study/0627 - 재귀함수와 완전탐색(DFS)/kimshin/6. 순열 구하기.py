@@ -1,20 +1,22 @@
-def DFS(L,sum):
-    global result
-    if sum > c:
-        return
-    if L==n:
-        if sum>result:
-            result=sum
+def DFS(L):
+    global cnt
+    if L==m:
+        for j in range(L):
+            print(res[j],end=' ')
+        print()
+        cnt+=1
     else:
-        DFS(L+1,sum+a[L])
-        DFS(L+1,sum)
+        for i in range(1,n+1):
+            if ch[i] == 0:
+                ch[i] = 1
+                res[L] = i
+                DFS(L+1)
+                ch[i]=0
 
 
-c,n = map(int,input().split())
-a=[0] * n
-result = -21444444
-for i in range(n):
-    a[i] = int(input())
-DFS(0,0)
-
-print(result)
+n,m= map(int, input().split())
+res=[0] * n
+ch=[0] * (n+1)
+cnt=0
+DFS(0)
+print(cnt)
