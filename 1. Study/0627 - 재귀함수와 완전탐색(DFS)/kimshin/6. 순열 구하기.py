@@ -7,7 +7,7 @@ def DFS(L):
         cnt+=1
     else:
         for i in range(1,n+1):
-            if ch[i] == 0:
+            if ch[i] == 0: # 중복숫자를 안하기위해 0인지확인함
                 ch[i] = 1
                 res[L] = i
                 DFS(L+1)
