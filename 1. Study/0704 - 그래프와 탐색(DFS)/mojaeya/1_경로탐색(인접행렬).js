@@ -17,8 +17,8 @@ let arr = [
 console.log(solution(n, m, arr));
 
 function solution(n, m, arr) {
-  let visited = Array.from({ length: n + 1 });
   let graph = Array.from(Array(n + 1), () => Array(n + 1).fill(0));
+  let visited = Array.from({ length: n + 1 });
   let path = [];
   let cnt = 0;
 
