@@ -8,13 +8,13 @@ console.log(solution(n, coin, m));
 
 function solution(n, coin, m) {
   let dp = Array.from({ length: m + 1 }, () => 1000);
-  dp[0] = 0;
+  dp[0] = 0; // dy[j] -> j 금액 거슬러 주는데 사용되는 최소 동전 개수
 
   for (let i = 0; i < n; i++) {
     // console.log("for loop i:", i);
     for (let j = coin[i]; j <= m; j++) {
       dp[j] = Math.min(dp[j], dp[j - coin[i]] + 1);
-      //console.log(dp)
+      console.log(dp);
     }
   }
   return dp[m];

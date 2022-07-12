@@ -21,7 +21,7 @@ function solution(n, m, arr) {
     let score = i[0];
     let time = i[1];
     for (let j = m; j >= time; j--) {
-      dp[j] = Math.max(dp[j], dp[j - time] + score);
+      dp[j] = Math.max(dp[j], dp[j - time] + score); // dy[j] -> j시간동안 얻을 수 있는 최대 점수
       //console.log(dp)
     }
   }
